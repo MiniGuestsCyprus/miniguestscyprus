@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us – Mini Guests Cyprus</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="wrap header-flex">
+
+      <!-- Logo image (same as homepage) -->
+      <a href="index.html" class="header-logo">
+        <img src="logo-navigation.jpg" alt="Mini Guests Cyprus logo">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Us</a>
+
+        <!-- PACKAGES DROPDOWN (same as homepage) -->
+        <div class="dropdown">
+          <a href="index.html#packages">Packages</a>
+          <div class="dropdown-content">
+            <a href="creche.html">Mini Crèche</a>
+            <a href="wedding-nanny.html">Wedding &amp; Special Occasions Nanny</a>
+            <a href="evening-nanny.html">Evening Nanny</a>
+          </div>
+        </div>
+
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+</body>
+</html>
+
+  <!-- PAGE CONTENT -->
+  <main class="wrap homepage-text">
+
+<h1 class="section-script-title section-center">Contact Us</h1>
+
+    <p style="text-align: center;">
+  Thank you for your interest in <strong>Mini Guests Cyprus</strong>.<br><br>
+
+  Whether you’re planning a wedding, special celebration or evening out, we’d love to hear more about your plans and how we can support your mini guests.
+</p>
+
+<p style="text-align: center;">
+  Please complete the short enquiry form below, and we’ll be in touch as soon as
+  possible with availability, package suggestions and next steps.
+</p>
+
+
+    <!-- CONTACT LAYOUT -->
+    <section class="contact-layout">
+
+      <!-- LEFT: CONTACT DETAILS & INFO -->
+      <div class="contact-info">
+
+        <h2 class="section-script-title">Get in Touch</h2>
+
+        <div class="contact-card">
+          <p><strong>Email:</strong><br>
+            <a href="mailto:miniguestscyprus@gmail.com">miniguestscyprus@gmail.com</a>
+          </p>
+
+          <p><strong>WhatsApp:</strong><br>
+            <a href="https://wa.me/35799154216" target="_blank">+357 99 154 216</a>
+          </p>
+
+          <p><strong>Instagram:</strong><br>
+            <a href="https://instagram.com/miniguestscyprus" target="_blank">@miniguestscyprus</a>
+          </p>
+
+          <p><strong>Facebook:</strong><br>
+            <a href="https://facebook.com/miniguestscyprus" target="_blank">Mini Guests Cyprus</a>
+          </p>
+
+          <p class="contact-note">
+            Based in <strong>Cyprus</strong>, available for weddings, events and private bookings.
+          </p>
+        </div>
+
+        <h2 class="section-script-title">Helpful Links</h3>
+        <ul class="bullet-list">
+          <li><a href="index.html#packages">View our packages</a></li>
+          <li><a href="index.html#testimonials">Read client testimonials</a></li>
+          <li><a href="index.html#about">Learn more about Mini Guests Cyprus</a></li>
+        </ul>
+
+        <p style="margin-top: 20px;">
+          If you’re not sure which package is right for you, just let us know a little about your event and the ages of
+          your mini guests – we’re happy to recommend the best options.
+        </p>
+
+      </div>
+
+      <!-- RIGHT: ENQUIRY FORM -->
+      <div class="contact-form-wrapper">
+        <h2 class="section-script-title">Send an Enquiry</h2>
+
+        <!-- NOTE: mailto opens the user’s email client. 
+             You can replace the action with a form service later if you wish. -->
+        <form class="contact-form" action="mailto:miniguestscyprus@gmail.com" method="post" enctype="text/plain">
+
+          <div class="form-row">
+            <label for="name">Your name *</label>
+            <input type="text" id="name" name="Name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="Phone">
+          </div>
+
+          <div class="form-row">
+            <label for="event-type">Type of event *</label>
+            <select id="event-type" name="Event type" required>
+              <option value="">Please select…</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Christening / Baptism">Christening / Baptism</option>
+              <option value="Birthday / Celebration">Birthday / Celebration</option>
+              <option value="Evening / Private booking">Evening / Private booking</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="service">Service you’re interested in *</label>
+            <select id="service" name="Service" required>
+              <option value="">Please select…</option>
+              <option value="Mini Creche">Mini Crèche</option>
+              <option value="Wedding &amp; Special Occasions Nanny">Wedding &amp; Special Occasions Nanny</option>
+              <option value="Evening Nanny">Evening Nanny</option>
+              <option value="Not sure yet">I’m not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="date">Event date</label>
+            <input type="date" id="date" name="Event date">
+          </div>
+
+          <div class="form-row">
+            <label for="location">Event location in Cyprus</label>
+            <input type="text" id="location" name="Event location" placeholder="Venue / town / area">
+          </div>
+
+          <div class="form-row">
+            <label for="children">Number &amp; ages of children *</label>
+            <textarea id="children" name="Children" rows="2" placeholder="e.g. 3 children, ages 2, 5 and 7" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Tell us about your plans *</label>
+            <textarea id="message" name="Message" rows="4" placeholder="Please share any details that will help us tailor your package." required></textarea>
+          </div>
+
+          <div class="form-row form-row-inline">
+            <label>
+              <input type="checkbox" name="Online call request">
+              I’d like to arrange an online call to discuss our plans.
+            </label>
+          </div>
+
+          <p class="contact-note">
+            We aim to respond to all enquiries as soon as possible. During busy wedding season, replies may take a little longer,
+            but we’ll always do our best to get back to you promptly.
+          </p>
+
+          <button type="submit" class="contact-button">
+            Send enquiry
+          </button>
+
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <div class="social-icons">
+        <a href="https://instagram.com/miniguestscyprus" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/miniguestscyprus" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/35799154216" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/miniguestscyprus" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:miniguestscyprus@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      © <span id="yr"></span> Mini Guests Cyprus
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
