@@ -15,17 +15,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<script>
-  (function () {
-    const cleanPath = sessionStorage.getItem("mg_clean_path");
-    if (cleanPath) {
-      // Update the address bar back to /about, /packages, etc. after the redirect
-      history.replaceState(null, "", cleanPath);
-      sessionStorage.removeItem("mg_clean_path");
-    }
-  })();
-</script>
-
 <body>
 
   <!-- HERO BANNER SECTION -->
@@ -715,6 +704,17 @@
       });
     })();
   </script>
+
+<script>
+  (function () {
+    const cleanPath = sessionStorage.getItem("mg_clean_path");
+    if (cleanPath) {
+      // Update the address bar back to /about, /packages, etc. after the redirect
+      history.replaceState(null, "", cleanPath);
+      sessionStorage.removeItem("mg_clean_path");
+    }
+  })();
+</script>
 
 </body>
 </html>
