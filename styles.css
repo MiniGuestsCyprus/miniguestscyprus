@@ -1035,6 +1035,24 @@ ul li {
   margin-left: 0 !important;
 }
 
+/* Center the Related Services block on mobile */
+@media (max-width: 768px) {
+  .related-services {
+    text-align: center;
+  }
+
+  /* Center the list itself (no bullets) */
+  .related-services ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 12px 0 0;
+  }
+
+  .related-services li {
+    margin: 8px 0;
+  }
+}
+
 /* DESKTOP ONLY — keep specific lines */
 @media (min-width: 769px) {
 
