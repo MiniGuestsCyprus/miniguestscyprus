@@ -181,6 +181,16 @@ body, header, footer, section, div, main {
   line-height: 1.65;
 }
 
+/* ===========================================================
+   RELATED SERVICES — match main content text size
+   =========================================================== */
+.related-services p,
+.related-services li,
+.related-services a {
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+
 /* Slightly tighter text on mobile to reduce scroll */
 @media (max-width: 768px) {
   .homepage-text {
