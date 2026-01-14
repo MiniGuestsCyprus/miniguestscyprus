@@ -709,6 +709,11 @@ svg path {
   fill: var(--brand-green) !important;
 }
 
+.testimonials .testimonials-title,
+.testimonials h2.section-script-title {
+  color: var(--brand-pink) !important;
+}
+
 /* ===========================================================
    CONTACT FORM — FORCE BRAND GREEN TEXT
    =========================================================== */
