@@ -99,68 +99,39 @@
     <a href="mailto:miniguestscyprus@gmail.com">miniguestscyprus@gmail.com</a>.
   </p>
 
-  <!-- IMPORTANT INFORMATION SECTION -->
-<section class="creche-important">
-  <h3 class="section-script-title">Important Information</h3>
+  <!-- IMPORTANT INFORMATION -->
+  <section class="creche-important">
+    <h3 class="section-script-title">Important Information</h3>
 
-  <ul class="important-list">
-    <li>The Mini Crèche service will need to be set up in an air conditioned area due to the Cyprus heat.</li>
-    <li>The Mini Crèche service can be set up in a small room or a secluded area at the reception venue.</li>
+    <ul class="important-list">
+      <li>The Mini Crèche service will need to be set up in an air conditioned area due to the Cyprus heat.</li>
+      <li>The Mini Crèche service can be set up in a small room or a secluded area at the reception venue.</li>
+      <li>Families must provide a mini guests bag with essentials.</li>
+      <li>Maximum 3 children per nanny.</li>
+    </ul>
 
-    <li>
-      Families will be asked to provide a mini guests bag which must include: change of clothing, any required medications,
-      sun cream, a light snack, comfort toy, sun hat, bottle of water, along with personal toiletries (nappies, baby wipes, etc.).
-    </li>
+    <p style="margin-top: 20px; font-style: italic;">
+      *Provided on a 1:3 nanny-to-child ratio.
+    </p>
+  </section>
 
-    <li>
-      The mini guests bag is to keep the children protected from the sun and ensures the children will be safe from allergic reactions.
-    </li>
+  <!-- RELATED SERVICES -->
+  <section class="related-services" aria-labelledby="related-services-title">
+    <h2 id="related-services-title" class="section-script-title">Related Services</h2>
 
-    <li>Booking 5–8 hours. Maximum 3 children. Additional children will require an additional nanny.</li>
+    <p>
+      Looking for a different childcare setup for your celebration? You may also be interested in:
+    </p>
 
-    <li>
-      All our packages have flexibility, so if you have any personal enquiries contact us at
-      <a href="mailto:miniguestscyprus@gmail.com">miniguestscyprus@gmail.com</a>.
-    </li>
+    <ul class="bullet-list">
+      <li><a href="/wedding-nanny">Wedding &amp; Special Occasions Nanny</a></li>
+      <li><a href="/evening-nanny">Evening Nanny</a></li>
+    </ul>
 
-    <li>We'll get in touch with you before the wedding or event to go over all the details to make sure everything is perfect for your mini guests.</li>
-  </ul>
-
-  <p style="margin-top: 30px; font-style: italic; line-height: 1.7;">
-    *The Mini Crèche &amp; Nanny service will be provided on a nanny/child ratio of 1:3.
-  </p>
-
-  <p style="font-style: italic; line-height: 1.7;">
-    If you require care for more children, an additional nanny can be arranged for a fee.
-  </p>
-
-  <p style="font-style: italic; line-height: 1.7;">
-    For mini guests aged 8 and above who are attending the event but do not require a nanny service,
-    we can bring appropriate entertainment for them.
-  </p>
-
-  <p style="margin-top: 5px; font-style: italic; line-height: 1.7;">
-    Contact us at <a href="mailto:miniguestscyprus@gmail.com">miniguestscyprus@gmail.com</a> for more details.
-  </p>
-</section>
-
-  <!-- RELATED SERVICES (internal links for users + SEO) -->
-<section class="related-services" aria-labelledby="related-services-title">
-  <h2 id="related-services-title" class="section-script-title">Related Services</h2>
-
-  <p>
-    Looking for a different childcare setup for your celebration? You may also be interested in:
-  </p>
-
-  <ul class="bullet-list">
-    <li><a href="/wedding-nanny">Wedding &amp; Special Occasions Nanny</a></li>
-    <li><a href="/evening-nanny">Evening Nanny</a></li>
-  </ul>
-
-  <p style="margin-top: 18px;">
-    Or return to the <a href="/#packages">Packages</a> section to compare options.
-  </p>
-</section>
+    <p style="margin-top: 18px;">
+      Or return to the <a href="/#packages">packages section</a> to compare options.
+    </p>
+  </section>
 
 </main>
 
@@ -178,6 +149,60 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  (function () {
+    const header = document.querySelector('.site-header');
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    const packagesToggleBtn = document.querySelector('.js-packages-toggle');
+
+    if (!header || !toggleBtn || !nav) return;
+
+    const mobileMQ = window.matchMedia('(max-width: 768px)');
+
+    function closeDropdowns() {
+      header.querySelectorAll('.dropdown.dd-open')
+        .forEach(d => d.classList.remove('dd-open'));
+      if (packagesToggleBtn) packagesToggleBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    function setNavOpen(open) {
+      header.classList.toggle('nav-open', open);
+      toggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('nav-locked', open);
+      if (!open) closeDropdowns();
+    }
+
+    toggleBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!mobileMQ.matches) return;
+      setNavOpen(!header.classList.contains('nav-open'));
+    });
+
+    if (packagesToggleBtn) {
+      packagesToggleBtn.addEventListener('click', function () {
+        if (!mobileMQ.matches) return;
+        const dropdown = packagesToggleBtn.closest('.dropdown');
+        if (!dropdown) return;
+        const isOpen = dropdown.classList.toggle('dd-open');
+        packagesToggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    nav.addEventListener('click', function (e) {
+      const link = e.target.closest('a');
+      if (!link) return;
+      if (!mobileMQ.matches) return;
+      setNavOpen(false);
+    });
+
+    mobileMQ.addEventListener('change', function () {
+      if (!mobileMQ.matches) setNavOpen(false);
+    });
+  })();
 </script>
 
 </body>
