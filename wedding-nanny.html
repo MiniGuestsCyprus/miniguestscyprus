@@ -6,10 +6,32 @@
 
   <title>Wedding Nanny Services in Cyprus | Mini Guests Cyprus</title>
 
-  <!-- Canonical (NO trailing slash) -->
   <link rel="canonical" href="https://www.miniguestscyprus.com/wedding-nanny" />
 
   <meta name="description" content="Professional wedding nanny services in Cyprus. English-speaking, SEN trained childcare for destination weddings, events and celebrations." />
+
+  <!-- Service Schema (Wedding Nanny) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.miniguestscyprus.com/wedding-nanny#service",
+    "name": "Wedding & Special Occasions Nanny Services in Cyprus",
+    "serviceType": "Wedding nanny and event childcare",
+    "provider": {
+      "@type": "ChildCare",
+      "@id": "https://www.miniguestscyprus.com/#business",
+      "name": "Mini Guests Cyprus",
+      "url": "https://www.miniguestscyprus.com/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Cyprus"
+    },
+    "url": "https://www.miniguestscyprus.com/wedding-nanny",
+    "description": "Professional wedding and special occasions nanny service in Cyprus, including childcare support throughout the day with personal care and entertainment."
+  }
+  </script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BY76WD422"></script>
@@ -20,19 +42,13 @@
     gtag('config', 'G-1BY76WD422');
   </script>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Dancing Script (navigation font) -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- SITE HEADER / NAVIGATION -->
   <header class="site-header">
     <div class="wrap header-flex">
       <a href="/" class="header-logo">
@@ -70,7 +86,6 @@
     </div>
   </header>
 
-  <!-- PAGE CONTENT -->
   <main class="wrap homepage-text">
 
     <h1 class="inner-page-title">Wedding &amp; Special Occasions Nanny</h1>
@@ -149,32 +164,27 @@
       Contact us at <a href="mailto:miniguestscyprus@gmail.com">miniguestscyprus@gmail.com</a> for more details.
     </p>
 
-    <!-- RELATED SERVICES (internal links for users + SEO) -->
-<section class="related-services" aria-labelledby="related-services-title">
-  
-  <h2 id="related-services-title" class="section-script-title">Related Services</h2>
+    <section class="related-services" aria-labelledby="related-services-title">
+      <h2 id="related-services-title" class="section-script-title">Related Services</h2>
 
-  <p>
-    Looking for a different childcare setup for your celebration? You may also be interested in:
-  </p>
+      <p>
+        Looking for a different childcare setup for your celebration? You may also be interested in:
+      </p>
 
-  <ul class="bullet-list">
-    <li><a href="/creche">Mini Crèche</a></li>
-    <li><a href="/evening-nanny">Evening Nanny</a></li>
-  </ul>
+      <ul class="bullet-list">
+        <li><a href="/creche">Mini Crèche</a></li>
+        <li><a href="/evening-nanny">Evening Nanny</a></li>
+      </ul>
 
-  <p style="margin-top: 18px;">
-    Or return to the <a href="/#packages">Packages</a> section to compare options.
-  </p>
-
-</section>
+      <p style="margin-top: 18px;">
+        Or return to the <a href="/#packages">Packages</a> section to compare options.
+      </p>
+    </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="wrap">
-
       <div class="social-icons">
         <a href="https://instagram.com/miniguestscyprus" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
         <a href="https://facebook.com/miniguestscyprus" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
@@ -191,7 +201,6 @@
     document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
 
-  <!-- MOBILE FULLSCREEN MENU SCRIPT -->
   <script>
     (function () {
       const header = document.querySelector('.site-header');
